@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Beuty</title>
+
+    <link rel="stylesheet" href="/src/css/form.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+<body>
+    <section class="window-login modal modal-show">
+        <div class="log-in-container form-container">
+            <a href="#" class="logo-page">
+                <img src="/src/img/logo2.png" alt="" class="logo-page-img">
+            </a>
+            <h1 class="form-tittle">Welcome back</h1>
+            <form action="" class="log-in-form form">
+                <input type="email" class="input" required class="" placeholder="Email" id="logIn-email">
+                <input type="password" class="input" required class="" placeholder="Password" id="logIn-password">  
+                <button type="submit" class="submit-btn">
+                    Log in
+                </button>
+                <p class="text-recover"><span class="recover-password">Forgot password?</span></p>
+            </form>
+            <div class="buttons">
+                <div class="google-login-btn btn-form" id="logIn-with-google">
+                    <img src="/src/img/assets/google.png" alt="">
+                   
+                </div>
+                <div class="facebook-login-btn btn-form" id="logIn-with-facebook">
+                    <img src="/src/img/assets/facebook.png" alt="">
+  
+                </div>
+                <div class="github-login-btn btn-form" id="logIn-with-github">
+                    <img src="/src/img/assets/github.png" alt="">
+                    
+                </div>
+            </div>
+            <p class="text-links">Don't have an account? <button class="sign-up link">Sign up</button></p>
+        </div>
+    </section>
+
+    <section class="window-signup modal">
+        <div class="sign-up-container form-container">
+            <a href="#" class="logo-page">
+                <img src="/src/img/logo2.png" alt="" class="logo-page-img">
+            </a>
+            <h1 class="form-tittle">Welcome!</h1>
+            <form action="" class="sign-up-form form">
+                <input type="email" class="input"placeholder="Email" required id="signUp-email">
+                <input type="password" class="input" placeholder="Password" required id="signUp-password">
+                <button type="submit" class="register-btn sign-up submit-btn" id="register-btn">
+                    Registrer
+                </button>
+            </form>
+            <p class="text-links">You have an account? <button class="log-in link">Log in</button></p>
+        </div>
+    </section>
+
+    <section class="window-recoverpassword modal">
+        <div class="recover-password-container form-container">
+            <a href="#" class="logo-page">
+                <img src="/src/img/assets/open-padlock.png" alt="" class="logo-page-img">
+            </a>
+            <h1 class="form-tittle">Recover Password</h1>
+            <p>enter the email address with which you registered and we will send you the instructions to recover your password</p>
+            <form action="" class="recover-form form">
+                <input type="email" class="input" placeholder="Email" required id="emailRegistered">
+                <button type="submit" class="submit-btn next-btn" id="recover-btn">
+                    Next
+                </button>
+            </form>
+            <p class="text-links" >did you remember the password? <button class="log-in2 link">Log in</button></p>
+        </div>
+    </section>
+
+    <section class="window-newpassword modal">
+        <div class="new-password-container form-container">
+            <a href="#" class="logo-page">
+                <img src="/src/img/assets/email.png" alt="" class="logo-page-img">
+            </a>
+            <h1 class="form-tittle">Check your email</h1>
+            <p>(Check in spam)</p>
+            <a href="/" class="back-btn link" style="margin-top: 15px;">
+                back
+            </a>
+        </div>
+    </section>
+    <!-- script -->
+    <!-- <script src="/src/js/main.js" type="module"></script> -->
+    <script src="/src/js/auth.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+:root{
+    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --second-font:'Gloock', serif;
+    --background-color: /*#F2DFEB*/  #7F7B76;
+    --second-color: /*#A64E5E*/ #403E3C;
+    --third-color: /*#F2636F*/ #C9A3A3;
+}
+/*
+Blanco (#FFFFFF)
+Negro (#000000)
+Gris claro (#CCCCCC)
+Gris oscuro (#333333)
+Plateado (#C0C0C0)
+Gris azulado (#778899)
+Gris verdoso (#8F9779)
+Gris rosado (#C9A3A3)
+*/
+
+body{
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
+p,h1{
+    margin:0;
+}
+button{
+    border: 0px;
+}
