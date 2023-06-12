@@ -1,9 +1,9 @@
 :root{
-    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --second-font:'Gloock', serif;
-    --background-color: /*#F2DFEB*/  #7F7B76;
-    --second-color: /*#A64E5E*/ #403E3C;
-    --third-color: /*#F2636F*/ #C9A3A3;
+    --font-family: 'Kanit', sans-serif;
+    --second-font: 'Bebas Neue', sans-serif;
+    --background-color: /*#F2DFEB*/  #222526;
+    --second-color: /*#A64E5E*/ #373C40;
+    --third-color: /*#F2636F*/ #CFCFCF;
 }
 /*
 Blanco (#FFFFFF)

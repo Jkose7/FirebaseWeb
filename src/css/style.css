@@ -3,7 +3,7 @@
 
 /*header*/
 .header{
-    height: 15vh;
+    height: 20vh;
     background-color: var(--second-color);
     display: flex; 
     justify-content: center;
@@ -25,20 +25,34 @@
 }
 /*Options header----------------------*/
 .options-container{
+    top: 20px;
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .options-list{
+    width:100%;
     display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 .options{
     color: #000;
-    margin: 0 1em;
+    margin: 5px 1em;
     font-size: 1em;
 }
-
+.btn-logout{
+    background-color: var(--background-color);
+    color: var(--third-color);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-logout:hover{
+    background-color: #939393;
+}
 
 /*home*/
 .home{
@@ -73,14 +87,11 @@
     border-radius: 0.6em;
     padding: 1em 1.2em;
 }
-.separation{
-    width: 100%;
-    height:1em;
-    background-color: var(--second-color);
-}
 /*information*/
 .information{
     display: flex;
+    margin-top: 20px;
+    background-color: var(--second-color)
 }
 .about-us{
     display: flex;
@@ -155,12 +166,12 @@
     width: 100%;
     height: 0;
     overflow: hidden;
-    transition: 0.5s ease;
+    transition: 0.6s ease;
     text-align: center;
-    background-color: rgb(255, 254, 243, 0.6);
+    background-color: rgb(255, 254, 243, 1);
 }
 .info-overlay{
-    margin: 4em 2em;
+    margin: 1em 1em;
     min-height: 500px;
 }
 .text-overlay{
@@ -180,6 +191,11 @@
 }
 
 @media (min-width: 768px){
+    .options-list{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     .btn-home{
         align-self: flex-start;
         font-size: 1.2em;

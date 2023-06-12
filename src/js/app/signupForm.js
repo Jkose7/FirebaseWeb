@@ -26,6 +26,5 @@ signupForm.addEventListener('submit', async (e)=>{
             showMessage(error.code, 'error')
         }
     }
-    signupForm.reset();
-   
+    signupForm.reset(); 
 })

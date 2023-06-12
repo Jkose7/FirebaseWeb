@@ -1,0 +1,144 @@
+@import "./root.css";
+@import "./normalize.css";
+@import "./style.css";
+
+.popular-movies-container {
+	width: 92%; 
+    overflow: hidden;
+	margin: 20px auto 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.popular-movies-container .movie-container {
+	position: relative;
+    width: 100%;
+    background-color: var(--third-color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+	text-align: center;
+}
+
+.popular-movies-container .movie-container .title-movie{
+	font-size: 16px;
+	font-weight: 600;
+    font-family: var(--first-font);
+}
+
+.popular-movies-container .movie-container .poster {
+	width: 100%;
+	margin-bottom: 1%;
+	border-radius: 10px 10px 0 0;
+}
+
+.movie-container:hover .overlay-img{
+    height: 90%;
+    cursor: pointer;
+	overflow-y:hidden;
+}
+
+.movie-info{
+	display: flex;
+	margin: 1em;
+}
+.movie-info span{
+	font-size: 16px;
+	font-weight: 900;
+	margin-left: 20px;
+}
+.search-input{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.info-overlay{
+    margin: 2em 2em;
+    /*min-height: 500px;*/
+}
+.text-overlay{
+    font-family: var(--second-font);
+    font-size: 16px;
+}
+.green{
+	margin-left: 5px;
+	color: green;
+}
+.orange{
+	margin-left: 5px;
+	color: orange;
+}
+.red{
+	margin-left: 5px;
+	color: red;
+}
+
+
+.paginacion {
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: var(--second-color);
+	color: #000;
+	border-radius: 100px;
+	font-family: var(--first-font);
+	font-weight: 600;
+	transition: .3s ease all;
+}
+.paginacion #pages h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+}
+
+.paginacion button:hover {
+	background: #939393;
+}
+#pages{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pages p{
+    font-family: var(--first-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (min-width: 400px) {
+    .popular-movies-container .movie-container {
+        width: 45%;
+    }
+	.info-overlay{
+		margin: 4em 2em;
+	}
+    
+}
+@media (min-width: 1200px) {
+    .popular-movies-container .movie-container {
+        width: 18%;
+    }
+	.info-overlay{
+		margin: 4em 2em;
+	}
+    
+}
