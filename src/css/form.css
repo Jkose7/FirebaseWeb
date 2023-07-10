@@ -1,5 +1,11 @@
 @import "./root.css";
 
+/* .hide-sesion{
+    display: none;
+} */
+.hide-content{
+    display: none;
+}
 .modal{
     position: fixed;
     display: flex;

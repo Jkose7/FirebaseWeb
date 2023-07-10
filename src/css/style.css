@@ -1,6 +1,10 @@
 @import "./root.css";
 @import "./form.css";
 
+/*body*/
+.hide-content{
+    display: none;
+}
 /*header*/
 .header{
     height: 20vh;

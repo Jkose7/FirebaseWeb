@@ -8,4 +8,5 @@ logOut.addEventListener('click', (e)=>{
     e.preventDefault();
     signOut(auth);
     showMessage("Logged out")
+    window.location.href =  "./auth.html";
 })
